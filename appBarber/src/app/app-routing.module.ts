@@ -15,7 +15,7 @@ const routes: Routes = [
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
   },
-  { path: 'tela-principal', loadChildren: './tela-principal/tela-principal.module#TelaPrincipalPageModule' },
+  
   { path: 'cadastro', loadChildren: './cadastro/cadastro.module#CadastroPageModule' }
 ];
 
