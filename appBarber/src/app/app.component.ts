@@ -20,6 +20,21 @@ export class AppComponent {
       title: 'List',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: 'Meus Dados',
+      url: '/meus-dados',
+      icon: 'contact'
+    },
+    {
+      title: 'Configurações',
+      url: '/configuracoes',
+      icon: 'construct'
+    },
+    {
+      title: 'Conta',
+      url: '/conta',
+      icon: 'list'
     }
     
   ];
