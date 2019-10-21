@@ -20,12 +20,8 @@ export class AppComponent {
       title: 'List',
       url: '/list',
       icon: 'list'
-    },
-    {
-      title: 'Cadastro',
-      url: '/cadastro',
-      icon: 'cadastro'
     }
+    
   ];
 
   constructor(
