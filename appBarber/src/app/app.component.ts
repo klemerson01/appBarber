@@ -36,7 +36,7 @@ export class AppComponent {
       url: '/conta',
       icon: 'list'
     }
-    
+
   ];
 
   constructor(
