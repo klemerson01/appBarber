@@ -18,6 +18,7 @@
         body {
            margin: 0px;
     }
+        #botao{ text-align: center }
     </style>
   <ion-toolbar>
     <ion-title>Cadastro</ion-title>
@@ -25,49 +26,24 @@
 </ion-header>
 
 <ion-content>
-  
-    <form [formGroup]="formularioDeUsuario" (ngSubmit)="enviarDados()">
-      <div>
-        <label for="nome">Nome: </label>
-        <input type="text" formControlName="nome">
-      </div>
-    
-      <div>
-        <label for="email">E-mail: </label>
-        <input type="text" formControlName="email">
-      </div>
-    
-      <div>
-        <label for="cpf">CPF: </label>
-        <input type="text" formControlName="cpf">
-      </div>
-    
-      <div>
-        <label for="nascimento">Nascimento: </label>
-        <input type="date" formControlName="nascimento">
-      </div>
-    
-      <div>
-        <label for="senha">Senha: </label>
-        <input type="password" formControlName="senha">
-      </div>
-    
-      <div>
-        <label for="confirmarSenha">Nome: </label>
-        <input type="password" formControlName="confirmarSenha">
-      </div>
-    
+  <div class="container">
+    <form ng-submit="submit()" class="form-horizontal" novalidate>
       <br>
-      <div>
-        <button [disabled]="!formularioDeUsuario.valid">Enviar dados</button>
+      <input type="name" ng-model="user.name" placeholder="Nome:"><br>
+      <br>
+      <input type="tel" ng-model="user.phone" ui-br-phone-number-mask="areaCode" placeholder="Telefone:"><br>
+      <br>
+      <input type="text" ng-model="user.state" placeholder="Estado:"><br>
+      <br>
+      <input type="text" ng-model="user.city" placeholder="Cidade:"><br>
+      <br>
+      <input type="email" ng-model="user.email" placeholder="Email:"><br>
+      <br>
+      <input type="password" ng-model="user.password" placeholder="Senha:">
+      <br><br>
+      <div id="botao">
+      <button  class="btn btn-primary">Cadastrar</button>
       </div>
-    
-      <br>
-      <br>
-    
-      <div>{{ formularioDeUsuario.value | json}}</div>
-      <div>{{ formularioDeUsuario.valid | json }}</div>
     </form>
-    
-    
+  </div>
 </ion-content>
