@@ -4,7 +4,7 @@
              .container {
                  width: 100vw;
                  height: 100vh;
-                 background: #2B2B2B;
+                 background: #272528;
                  display: flex;
                  flex-direction: row;
                  justify-content: center;
@@ -19,6 +19,7 @@
                 margin: 0px;
          }
          #formulario { text-align: center }
+         #imagem { text-align: center }
          </style>
   <ion-toolbar>
     <ion-title>Login</ion-title>
@@ -27,9 +28,15 @@
 </ion-header>
 
 <ion-content>
-    <div class="container" >
         
-      <form ng-submit="submit()" class="form-horizontal" novalidate>
+    <div class="container" >
+
+      <form ng-submit="submit()" class="form-horizontal" novalidate>        
+        <div id="imagem">
+          <a>
+        <img src="assets/icon/logo.jpeg" width=150 height=250 alt="">
+        </a>
+        </div>
         <input type="email" ng-model="user.email" placeholder="Email:"><br>
         <br>
         <input type="password" ng-model="user.password" placeholder="Senha:">
