@@ -1,9 +1,47 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Profissional</ion-title>
+    <ion-title>Principal</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div class="container">
+    <form ng-submit="submit()" class="form-horizontal" novalidate>        
+      <div id="imagem">
+        <a>
+      <img src="assets/icon/logo.png" width=100 height=215 alt="">
+      </a>
+      </div><br>
+      <ion-list>
+          <ion-list-header>Selecione</ion-list-header>
+        
+          <ion-item>
+            <ion-label>Profissional</ion-label>
+            <ion-select placeholder="Select One">
+              <ion-select-option value="Alesson">Alesson</ion-select-option>
+              <ion-select-option value="Klemerson">Klemerson</ion-select-option>
+            </ion-select>
+          </ion-item>        
+          <ion-item>
+            <ion-label>Serviço</ion-label>
+            <ion-select value="Cabelo" okText="Okay" cancelText="Dismiss">
+              <ion-select-option value="Cabelo">Cabelo</ion-select-option>
+              <ion-select-option value="CabeBar">Cabelo + Barba</ion-select-option>
+              <ion-select-option value="Barba">Barba</ion-select-option>
+              <ion-select-option value="CabeGil">Cabelo Giletado</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+              <ion-label>Atendimento</ion-label>
+              <ion-select>
+                <ion-select-option value="Domicilio">Domicilio</ion-select-option>
+                <ion-select-option value="Estabelecimento">Estabelecimento</ion-select-option>
+              </ion-select>
+            </ion-item>
+        
+        </ion-list>
+    </form>
+    
+  </div>
+  
 </ion-content>
