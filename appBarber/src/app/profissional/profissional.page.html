@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
     <ion-title>Principal</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,7 +16,7 @@
       </a>
       </div><br>
       <ion-list>
-          <ion-list-header>Selecione</ion-list-header>
+          <ion-list-header>Agende</ion-list-header>
         
           <ion-item>
             <ion-label>Profissional</ion-label>
@@ -21,7 +24,8 @@
               <ion-select-option value="Alesson">Alesson</ion-select-option>
               <ion-select-option value="Klemerson">Klemerson</ion-select-option>
             </ion-select>
-          </ion-item>        
+          </ion-item>
+          <br>        
           <ion-item>
             <ion-label>Serviço</ion-label>
             <ion-select value="Cabelo" okText="Okay" cancelText="Dismiss">
@@ -31,6 +35,7 @@
               <ion-select-option value="CabeGil">Cabelo Giletado</ion-select-option>
             </ion-select>
           </ion-item>
+          <br>
           <ion-item>
               <ion-label>Atendimento</ion-label>
               <ion-select>
@@ -38,7 +43,20 @@
                 <ion-select-option value="Estabelecimento">Estabelecimento</ion-select-option>
               </ion-select>
             </ion-item>
-        
+            
+            <ion-item>
+                <ion-label position="floating"></ion-label>
+                <ion-input type="date" ng-model="data"></ion-input>
+            </ion-item>
+            
+            <ion-item>
+                <ion-label position="floating"></ion-label>
+                <ion-input type="time" ng-model="Hora"></ion-input>
+            </ion-item>
+            <br>
+            <div id="botao">
+                <ion-button class="">Agendar</ion-button><br><br>
+            </div>
         </ion-list>
     </form>
     
