@@ -1,38 +1,32 @@
 <ion-header>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-    
-  </ion-toolbar>
- 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<ion-toolbar color="primary">
+    <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+  <ion-title>Login</ion-title>
+</ion-toolbar>
 </ion-header>
 
 <ion-content>
-        
-    <div class="container" >
-
-      <form ng-submit="submit()" class="form-horizontal" novalidate>        
-        <div id="imagem">
-          <a>
+  <div class="container" >
+    <form ng-submit="submit()" class="form-horizontal" novalidate>        
+      <div id="imagem">
         <img src="assets/icon/logo.png" width=100 height=215 alt="">
-        </a>
-        </div><br>
-        <ion-item>
-          <ion-label position="floating">Email</ion-label>
-          <ion-input type="email" ng-model="user.email"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating">Senha</ion-label>
-          <ion-input type="password" ng-model="user.password"></ion-input>
-        </ion-item>
-       <br>
-        <div id="formulario">
-        <ion-button class="" color="success">Login</ion-button><br><br>
-        <p class="link">
-            <a href="http://localhost:8100/cadastro">Criar uma conta</a><br>
-        </p>
-        </div>
-      </form>
-    </div>
+      </div><br>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" ng-model="user.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input type="password" ng-model="user.password"></ion-input>
+      </ion-item>
+     <br>
+      <div id="formulario">
+      <ion-button class="" color="primary">Login</ion-button><br>
+     <a href="http://localhost:8100/cadastro">Criar uma conta</a><br>
+      </div>
+  </form>
+  </div>
 </ion-content>

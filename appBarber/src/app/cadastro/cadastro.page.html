@@ -1,57 +1,37 @@
 <ion-header>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-  <ion-toolbar>
-    <ion-title>Cadastro</ion-title>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="login"></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+      <ion-title>Cadastro</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <br> <br> <br> <br>
-  <div class="container">
-    <form ng-submit="submit()" class="form-horizontal" novalidate>
-      <div id="imagem">
-        <a>
-      <img src="assets/icon/logo.png" width=100 height=215 alt="">
-      </a>
-      </div><br>
-      <ion-item>
-        <ion-label position="floating">Nome</ion-label>
-        <ion-input type="name" ng-model="user.name"></ion-input>
-      </ion-item>
-      <br>
-      <ion-item>
-        <ion-label position="floating">Telefone</ion-label>
-        <ion-input type="tel" ng-model="user.phone" ui-br-phone-number-mask="areaCode"></ion-input>
-      </ion-item>
-      <br>
-      <ion-item>
-        <ion-label position="floating">Estado</ion-label>
-        <ion-input type="text" ng-model="user.state"></ion-input>
-      </ion-item>
-      <br>
-      <ion-item>
-        <ion-label position="floating">Cidade</ion-label>
-        <ion-input type="text" ng-model="user.city"></ion-input>
-      </ion-item>
-      <br>
-      <ion-item>
-        <ion-label position="floating">Email</ion-label>
-        <ion-input type="email" ng-model="user.email"></ion-input>
-      </ion-item>
-      <br>
-      <ion-item>
-        <ion-label position="floating">Senha</ion-label>
-        <ion-input type="password" ng-model="user.password"></ion-input>
-      </ion-item>
-      <br>
-      <div id="botao">
-        <ion-button class="">Cadastrar</ion-button><br><br>
-        
-        </div>
-    </form>
-  </div>
+    <div class="container" >
+        <form ng-submit="submit()" class="form-horizontal" novalidate>   
+          <br>     
+         <ion-item>
+            <ion-label position="floating">Nome</ion-label>
+            <ion-input type="text" ng-model="user.nome"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating">Sobrenome</ion-label>
+              <ion-input type="text" ng-model="user.sobrenome"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Email</ion-label>
+                <ion-input type="email" ng-model="user.email"></ion-input>
+              </ion-item>
+          <ion-item>
+            <ion-label position="floating">Senha</ion-label>
+            <ion-input type="password" ng-model="user.password"></ion-input>
+          </ion-item><br>
+          <div id="botao">
+          <ion-button  color="primary">Cadastrar</ion-button><br>
+          <ion-button class="" color="primary" href="">Voltar</ion-button><br>
+          </div>
+      </form>
+      </div>
 </ion-content>
